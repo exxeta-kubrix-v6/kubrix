@@ -1,0 +1,12 @@
+loki:
+  gateway:
+    ingress:
+      hosts:
+        - host: logs-monitoring.kubrix.cape.rocks
+          paths:
+            - path: /
+              pathType: Prefix
+      tls:
+        - secretName: loki-gateway-tls
+          hosts:
+            - logs-monitoring.kubrix.cape.rocks

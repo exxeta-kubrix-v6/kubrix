@@ -1,0 +1,13 @@
+falco:
+  falcosidekick:
+    webui:
+      ingress:
+        hosts:
+          - host: falco.kubrix.cape.rocks
+            paths:
+              - path: /
+                pathType: Prefix
+        tls:
+            - secretName: falco-server-tls
+              hosts:
+                - falco.kubrix.cape.rocks

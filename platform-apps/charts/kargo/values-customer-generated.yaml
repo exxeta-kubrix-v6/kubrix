@@ -1,0 +1,6 @@
+kargo:
+  api:
+    host: kargo.kubrix.cape.rocks
+    argocd:
+      urls:
+        "": https://argocd.kubrix.cape.rocks

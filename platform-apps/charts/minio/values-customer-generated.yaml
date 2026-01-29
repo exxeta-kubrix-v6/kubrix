@@ -1,0 +1,15 @@
+minio:
+  consoleIngress:
+    hosts:
+      - minio-console.kubrix.cape.rocks
+    tls: 
+      - secretName: minio-console-tls
+        hosts:
+          - minio-console.kubrix.cape.rocks
+  ingress:
+    hosts:
+      - minio.kubrix.cape.rocks
+    tls: 
+      - secretName: minio-server-tls
+        hosts:
+          - minio.kubrix.cape.rocks

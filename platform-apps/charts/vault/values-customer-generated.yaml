@@ -1,0 +1,10 @@
+vault:
+  server:
+    ingress:
+      hosts:
+        - host: vault.kubrix.cape.rocks
+          paths: []
+      tls: 
+        - secretName: vault-server-tls
+          hosts:
+            - vault.kubrix.cape.rocks

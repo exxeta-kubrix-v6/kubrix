@@ -1,0 +1,13 @@
+clusterType: k8s
+cloudProvider: aks
+dnsProvider: azure
+certManagerDnsProvider: none
+tShirtSize: small
+securityStrict: false
+haEnabled: false
+domain: kubrix.cape.rocks
+gitRepo: https://github.com/exxeta-kubrix-v6/kubrix
+gitRepoOrg: exxeta-kubrix-v6
+gitRepoName: kubrix
+gitUser: FabianFelixKraus02
+metalLbIp:  
