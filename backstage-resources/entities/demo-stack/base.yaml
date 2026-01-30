@@ -15,17 +15,6 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
-  name: jkleinlercher
-spec:
-  profile:
-    displayName: jkleinlercher
-    email: guest@example.com
-    picture: https://api.dicebear.com/7.x/avataaars/svg?seed=Midnight&backgroundColor=transparent
-  memberOf: [kubrix]
----
-apiVersion: backstage.io/v1alpha1
-kind: User
-metadata:
   name: FabianFelixKraus02
 spec:
   profile:
