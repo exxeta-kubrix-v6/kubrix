@@ -3,7 +3,8 @@ kind: ConfigMap
 metadata:
   name: mcp-wrapper-script
   labels:
-    {{- include "backstage.labels" . | nindent 4 }}
+    app: mcp-demo
+    component: mcp-server
 data:
   # This wrapper converts the 'stdio' MCP server into an HTTP (SSE) server
   server.js: |
@@ -45,7 +46,7 @@ kind: Deployment
 metadata:
   name: mcp-demo-server
   labels:
-    {{- include "backstage.labels" . | nindent 4 }}
+    app: mcp-demo
     component: mcp-server
 spec:
   replicas: 1
@@ -76,7 +77,8 @@ kind: Service
 metadata:
   name: mcp-demo-service
   labels:
-    {{- include "backstage.labels" . | nindent 4 }}
+    app: mcp-demo
+    component: mcp-server
 spec:
   selector:
     app: mcp-demo
