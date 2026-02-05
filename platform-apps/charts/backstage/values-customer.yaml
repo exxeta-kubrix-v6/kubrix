@@ -1,0 +1,28 @@
+backstage:
+  backstage:
+    # 1. Inject the Secret for Exxeta AI
+    extraEnvVarsSecrets:
+      - sx-cnp-secret
+      - backstage-db-secrets
+      - sx-vault-secret
+      - sx-oidc-secret
+      - exxeta-ai-secret
+
+    appConfig:
+      # 2. Configure the Chat Plugin
+      mcpChat:
+        providers:
+          - id: litellm
+            # Point to your Exxeta LiteLLM instance
+            baseUrl: 'https://ai.exxeta.info/v1' 
+            model: 'gpt-4o-mini'
+            # This secret variable is injected by extraEnvVarsSecrets above
+            apiKey: ${EXXETA_AI_TOKEN}
+        
+        # 3. Connect to the Server we just deployed
+        mcpServers:
+          - id: demo-everything
+            name: demo-everything
+            # This points to the Service we created in Step 1
+            url: http://mcp-demo-service:80/sse
+            type: sse
