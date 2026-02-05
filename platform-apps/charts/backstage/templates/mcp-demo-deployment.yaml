@@ -1,0 +1,85 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mcp-wrapper-script
+  labels:
+    {{- include "backstage.labels" . | nindent 4 }}
+data:
+  # This wrapper converts the 'stdio' MCP server into an HTTP (SSE) server
+  server.js: |
+    const { spawn } = require('child_process');
+    const http = require('http');
+    
+    console.log("Starting MCP Wrapper...");
+    const mcpProcess = spawn('npx', ['-y', '@modelcontextprotocol/server-everything'], {
+      stdio: ['pipe', 'pipe', process.stderr]
+    });
+
+    const server = http.createServer((req, res) => {
+      // Allow Backstage to connect via SSE
+      if (req.url === '/sse') {
+        console.log("New SSE connection accepted");
+        res.writeHead(200, {
+          'Content-Type': 'text/event-stream',
+          'Cache-Control': 'no-cache',
+          'Connection': 'keep-alive'
+        });
+        mcpProcess.stdout.on('data', (data) => {
+          res.write(`data: ${data.toString()}\n\n`);
+        });
+        // Keep connection open
+      } else if (req.method === 'POST') {
+        req.pipe(mcpProcess.stdin, { end: false });
+        res.writeHead(200);
+        res.end('ok');
+      } else {
+        res.writeHead(404);
+        res.end();
+      }
+    });
+    server.listen(8080, '0.0.0.0', () => console.log('MCP SSE Wrapper listening on 0.0.0.0:8080'));
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mcp-demo-server
+  labels:
+    {{- include "backstage.labels" . | nindent 4 }}
+    component: mcp-server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mcp-demo
+  template:
+    metadata:
+      labels:
+        app: mcp-demo
+    spec:
+      containers:
+        - name: node-wrapper
+          image: node:20-alpine
+          command: ["node", "/app/server.js"]
+          ports:
+            - containerPort: 8080
+          volumeMounts:
+            - name: script-volume
+              mountPath: /app
+      volumes:
+        - name: script-volume
+          configMap:
+            name: mcp-wrapper-script
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mcp-demo-service
+  labels:
+    {{- include "backstage.labels" . | nindent 4 }}
+spec:
+  selector:
+    app: mcp-demo
+  ports:
+    - port: 80
+      targetPort: 8080
