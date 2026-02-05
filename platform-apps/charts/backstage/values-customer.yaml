@@ -12,7 +12,7 @@ backstage:
       # 2. Configure the Chat Plugin
       mcpChat:
         providers:
-          - id: exxeta-litellm
+          - id: litellm
             # Point to your Exxeta LiteLLM instance
             baseUrl: 'https://ai.exxeta.info/v1' 
             model: 'gpt-4o-mini'
