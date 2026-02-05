@@ -2,6 +2,10 @@ backstage:
   backstage:
     # 1. Inject the Secret for Exxeta AI
     extraEnvVarsSecrets:
+      - sx-cnp-secret
+      - backstage-db-secrets
+      - sx-vault-secret
+      - sx-oidc-secret
       - exxeta-ai-secret
 
     appConfig:
