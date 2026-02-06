@@ -27,7 +27,7 @@
 <h4>No Misconfigurations found</h4>
 
 <h3>Target <code>ghcr.io/suxess-it/sx-backstage:v1.43.3 (wolfi 20230201)</code></h3>
-<h4>Vulnerabilities (7)</h4>
+<h4>Vulnerabilities (13)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -42,6 +42,13 @@
         <td>HIGH</td>
         <td>2.42-r4</td>
         <td>2.42-r6</td>
+    </tr>
+    <tr>
+        <td><code>nodejs-22</code></td>
+        <td>CVE-2025-55130</td>
+        <td>CRITICAL</td>
+        <td>22.21.1-r1</td>
+        <td>22.22.0-r0</td>
     </tr>
     <tr>
         <td><code>nodejs-22</code></td>
@@ -66,10 +73,31 @@
     </tr>
     <tr>
         <td><code>nodejs-22</code></td>
+        <td>CVE-2025-59465</td>
+        <td>HIGH</td>
+        <td>22.21.1-r1</td>
+        <td>22.22.0-r0</td>
+    </tr>
+    <tr>
+        <td><code>nodejs-22</code></td>
         <td>CVE-2025-59466</td>
         <td>HIGH</td>
         <td>22.21.1-r1</td>
         <td>22.22.0-r0</td>
+    </tr>
+    <tr>
+        <td><code>nodejs-22</code></td>
+        <td>CVE-2026-21637</td>
+        <td>HIGH</td>
+        <td>22.21.1-r1</td>
+        <td>22.22.0-r0</td>
+    </tr>
+    <tr>
+        <td><code>npm</code></td>
+        <td>CVE-2026-0775</td>
+        <td>HIGH</td>
+        <td>11.6.4-r0</td>
+        <td>11.9.0-r0</td>
     </tr>
     <tr>
         <td><code>npm</code></td>
@@ -85,10 +113,24 @@
         <td>11.6.4-r0</td>
         <td>11.8.0-r0</td>
     </tr>
+    <tr>
+        <td><code>npm</code></td>
+        <td>CVE-2026-24842</td>
+        <td>HIGH</td>
+        <td>11.6.4-r0</td>
+        <td>11.9.0-r0</td>
+    </tr>
+    <tr>
+        <td><code>npm</code></td>
+        <td>CVE-2026-25547</td>
+        <td>HIGH</td>
+        <td>11.6.4-r0</td>
+        <td>11.9.0-r0</td>
+    </tr>
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>Node.js</code></h3>
-<h4>Vulnerabilities (111)</h4>
+<h4>Vulnerabilities (112)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -271,6 +313,13 @@
         <td>HIGH</td>
         <td>1.22.0</td>
         <td>1.25.2</td>
+    </tr>
+    <tr>
+        <td><code>@modelcontextprotocol/sdk</code></td>
+        <td>CVE-2026-25536</td>
+        <td>HIGH</td>
+        <td>1.22.0</td>
+        <td>1.26.0</td>
     </tr>
     <tr>
         <td><code>fast-xml-parser</code></td>
@@ -920,6 +969,64 @@
         <td>HIGH</td>
         <td>0.45.1</td>
         <td>0.46.2</td>
+    </tr>
+</table>
+<h4>No Misconfigurations found</h4>
+
+<h3>Target <code>node:20-alpine (alpine 3.23.3)</code></h3>
+<h4>No Vulnerabilities found</h4>
+<h4>No Misconfigurations found</h4>
+<h3>Target <code>Node.js</code></h3>
+<h4>Vulnerabilities (6)</h4>
+<table>
+    <tr>
+        <th>Package</th>
+        <th>ID</th>
+        <th>Severity</th>
+        <th>Installed Version</th>
+        <th>Fixed Version</th>
+    </tr>
+    <tr>
+        <td><code>cross-spawn</code></td>
+        <td>CVE-2024-21538</td>
+        <td>HIGH</td>
+        <td>7.0.3</td>
+        <td>7.0.5, 6.0.6</td>
+    </tr>
+    <tr>
+        <td><code>glob</code></td>
+        <td>CVE-2025-64756</td>
+        <td>HIGH</td>
+        <td>10.4.2</td>
+        <td>11.1.0, 10.5.0</td>
+    </tr>
+    <tr>
+        <td><code>npm</code></td>
+        <td>CVE-2026-0775</td>
+        <td>HIGH</td>
+        <td>10.8.2</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><code>tar</code></td>
+        <td>CVE-2026-23745</td>
+        <td>HIGH</td>
+        <td>6.2.1</td>
+        <td>7.5.3</td>
+    </tr>
+    <tr>
+        <td><code>tar</code></td>
+        <td>CVE-2026-23950</td>
+        <td>HIGH</td>
+        <td>6.2.1</td>
+        <td>7.5.4</td>
+    </tr>
+    <tr>
+        <td><code>tar</code></td>
+        <td>CVE-2026-24842</td>
+        <td>HIGH</td>
+        <td>6.2.1</td>
+        <td>7.5.7</td>
     </tr>
 </table>
 <h4>No Misconfigurations found</h4>
