@@ -11,11 +11,11 @@ backstage:
       mcpChat:
         providers:
           - id: openai
-            # Point to  Exxeta LiteLLM instance
+            # Point to Exxeta LiteLLM instance
             baseUrl: 'https://ai.exxeta.info/v1' 
             model: 'gpt-4o-mini'
             # This secret variable is injected by extraEnvVarsSecrets above
-            apiKey: ${EXXETA_AI_TOKEN}
+            apiKey: '${EXXETA_AI_TOKEN}'
         
         mcpServers:
           - id: demo-everything
