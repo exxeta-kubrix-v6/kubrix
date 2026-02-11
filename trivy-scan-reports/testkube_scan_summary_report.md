@@ -54,7 +54,7 @@
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>bin/app</code></h3>
-<h4>Vulnerabilities (2)</h4>
+<h4>Vulnerabilities (3)</h4>
 <table>
     <tr>
         <th>Package</th>
@@ -62,6 +62,13 @@
         <th>Severity</th>
         <th>Installed Version</th>
         <th>Fixed Version</th>
+    </tr>
+    <tr>
+        <td><code>github.com/gofiber/fiber/v2</code></td>
+        <td>CVE-2025-66630</td>
+        <td>CRITICAL</td>
+        <td>v2.52.5</td>
+        <td>2.52.11</td>
     </tr>
     <tr>
         <td><code>github.com/gofiber/fiber/v2</code></td>
@@ -73,7 +80,7 @@
     <tr>
         <td><code>stdlib</code></td>
         <td>CVE-2025-68121</td>
-        <td>HIGH</td>
+        <td>CRITICAL</td>
         <td>v1.25.6</td>
         <td>1.24.13, 1.25.7, 1.26.0-rc.3</td>
     </tr>
@@ -92,6 +99,13 @@
         <th>Severity</th>
         <th>Installed Version</th>
         <th>Fixed Version</th>
+    </tr>
+    <tr>
+        <td><code>stdlib</code></td>
+        <td>CVE-2025-68121</td>
+        <td>CRITICAL</td>
+        <td>v1.24.3</td>
+        <td>1.24.13, 1.25.7, 1.26.0-rc.3</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>
@@ -142,13 +156,6 @@
         <td>v1.24.3</td>
         <td>1.24.12, 1.25.6</td>
     </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2025-68121</td>
-        <td>HIGH</td>
-        <td>v1.24.3</td>
-        <td>1.24.13, 1.25.7, 1.26.0-rc.3</td>
-    </tr>
 </table>
 <h4>No Misconfigurations found</h4>
 <h3>Target <code>usr/bin/minio</code></h3>
@@ -167,6 +174,13 @@
         <td>HIGH</td>
         <td>v0.0.0-20250613113347-a6c538c5a113+dirty</td>
         <td>0.0.0-20251015170045-c1a49490c78e</td>
+    </tr>
+    <tr>
+        <td><code>stdlib</code></td>
+        <td>CVE-2025-68121</td>
+        <td>CRITICAL</td>
+        <td>v1.24.4</td>
+        <td>1.24.13, 1.25.7, 1.26.0-rc.3</td>
     </tr>
     <tr>
         <td><code>stdlib</code></td>
@@ -209,13 +223,6 @@
         <td>HIGH</td>
         <td>v1.24.4</td>
         <td>1.24.12, 1.25.6</td>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2025-68121</td>
-        <td>HIGH</td>
-        <td>v1.24.4</td>
-        <td>1.24.13, 1.25.7, 1.26.0-rc.3</td>
     </tr>
 </table>
 <h4>No Misconfigurations found</h4>
@@ -286,6 +293,13 @@
     </tr>
     <tr>
         <td><code>stdlib</code></td>
+        <td>CVE-2025-68121</td>
+        <td>CRITICAL</td>
+        <td>v1.24.4</td>
+        <td>1.24.13, 1.25.7, 1.26.0-rc.3</td>
+    </tr>
+    <tr>
+        <td><code>stdlib</code></td>
         <td>CVE-2025-47907</td>
         <td>HIGH</td>
         <td>v1.24.4</td>
@@ -325,13 +339,6 @@
         <td>HIGH</td>
         <td>v1.24.4</td>
         <td>1.24.12, 1.25.6</td>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2025-68121</td>
-        <td>HIGH</td>
-        <td>v1.24.4</td>
-        <td>1.24.13, 1.25.7, 1.26.0-rc.3</td>
     </tr>
 </table>
 <h4>No Misconfigurations found</h4>
@@ -402,6 +409,13 @@
     </tr>
     <tr>
         <td><code>stdlib</code></td>
+        <td>CVE-2025-68121</td>
+        <td>CRITICAL</td>
+        <td>v1.24.4</td>
+        <td>1.24.13, 1.25.7, 1.26.0-rc.3</td>
+    </tr>
+    <tr>
+        <td><code>stdlib</code></td>
         <td>CVE-2025-47907</td>
         <td>HIGH</td>
         <td>v1.24.4</td>
@@ -442,13 +456,6 @@
         <td>v1.24.4</td>
         <td>1.24.12, 1.25.6</td>
     </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2025-68121</td>
-        <td>HIGH</td>
-        <td>v1.24.4</td>
-        <td>1.24.13, 1.25.7, 1.26.0-rc.3</td>
-    </tr>
 </table>
 <h4>No Misconfigurations found</h4>
 
@@ -486,6 +493,13 @@
     </tr>
     <tr>
         <td><code>stdlib</code></td>
+        <td>CVE-2025-68121</td>
+        <td>CRITICAL</td>
+        <td>v1.25.4</td>
+        <td>1.24.13, 1.25.7, 1.26.0-rc.3</td>
+    </tr>
+    <tr>
+        <td><code>stdlib</code></td>
         <td>CVE-2025-61726</td>
         <td>HIGH</td>
         <td>v1.25.4</td>
@@ -511,13 +525,6 @@
         <td>HIGH</td>
         <td>v1.25.4</td>
         <td>1.24.12, 1.25.6</td>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2025-68121</td>
-        <td>HIGH</td>
-        <td>v1.25.4</td>
-        <td>1.24.13, 1.25.7, 1.26.0-rc.3</td>
     </tr>
 </table>
 <h4>No Misconfigurations found</h4>
@@ -533,6 +540,13 @@
     </tr>
     <tr>
         <td><code>stdlib</code></td>
+        <td>CVE-2025-68121</td>
+        <td>CRITICAL</td>
+        <td>v1.25.4</td>
+        <td>1.24.13, 1.25.7, 1.26.0-rc.3</td>
+    </tr>
+    <tr>
+        <td><code>stdlib</code></td>
         <td>CVE-2025-61726</td>
         <td>HIGH</td>
         <td>v1.25.4</td>
@@ -558,13 +572,6 @@
         <td>HIGH</td>
         <td>v1.25.4</td>
         <td>1.24.12, 1.25.6</td>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2025-68121</td>
-        <td>HIGH</td>
-        <td>v1.25.4</td>
-        <td>1.24.13, 1.25.7, 1.26.0-rc.3</td>
     </tr>
 </table>
 <h4>No Misconfigurations found</h4>
@@ -580,6 +587,13 @@
     </tr>
     <tr>
         <td><code>stdlib</code></td>
+        <td>CVE-2025-68121</td>
+        <td>CRITICAL</td>
+        <td>v1.25.4</td>
+        <td>1.24.13, 1.25.7, 1.26.0-rc.3</td>
+    </tr>
+    <tr>
+        <td><code>stdlib</code></td>
         <td>CVE-2025-61726</td>
         <td>HIGH</td>
         <td>v1.25.4</td>
@@ -605,13 +619,6 @@
         <td>HIGH</td>
         <td>v1.25.4</td>
         <td>1.24.12, 1.25.6</td>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2025-68121</td>
-        <td>HIGH</td>
-        <td>v1.25.4</td>
-        <td>1.24.13, 1.25.7, 1.26.0-rc.3</td>
     </tr>
 </table>
 <h4>No Misconfigurations found</h4>
@@ -627,6 +634,13 @@
     </tr>
     <tr>
         <td><code>stdlib</code></td>
+        <td>CVE-2025-68121</td>
+        <td>CRITICAL</td>
+        <td>v1.25.4</td>
+        <td>1.24.13, 1.25.7, 1.26.0-rc.3</td>
+    </tr>
+    <tr>
+        <td><code>stdlib</code></td>
         <td>CVE-2025-61726</td>
         <td>HIGH</td>
         <td>v1.25.4</td>
@@ -652,13 +666,6 @@
         <td>HIGH</td>
         <td>v1.25.4</td>
         <td>1.24.12, 1.25.6</td>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2025-68121</td>
-        <td>HIGH</td>
-        <td>v1.25.4</td>
-        <td>1.24.13, 1.25.7, 1.26.0-rc.3</td>
     </tr>
 </table>
 <h4>No Misconfigurations found</h4>
@@ -674,6 +681,13 @@
     </tr>
     <tr>
         <td><code>stdlib</code></td>
+        <td>CVE-2025-68121</td>
+        <td>CRITICAL</td>
+        <td>v1.25.4</td>
+        <td>1.24.13, 1.25.7, 1.26.0-rc.3</td>
+    </tr>
+    <tr>
+        <td><code>stdlib</code></td>
         <td>CVE-2025-61726</td>
         <td>HIGH</td>
         <td>v1.25.4</td>
@@ -699,13 +713,6 @@
         <td>HIGH</td>
         <td>v1.25.4</td>
         <td>1.24.12, 1.25.6</td>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2025-68121</td>
-        <td>HIGH</td>
-        <td>v1.25.4</td>
-        <td>1.24.13, 1.25.7, 1.26.0-rc.3</td>
     </tr>
 </table>
 <h4>No Misconfigurations found</h4>
@@ -721,6 +728,13 @@
     </tr>
     <tr>
         <td><code>stdlib</code></td>
+        <td>CVE-2025-68121</td>
+        <td>CRITICAL</td>
+        <td>v1.25.4</td>
+        <td>1.24.13, 1.25.7, 1.26.0-rc.3</td>
+    </tr>
+    <tr>
+        <td><code>stdlib</code></td>
         <td>CVE-2025-61726</td>
         <td>HIGH</td>
         <td>v1.25.4</td>
@@ -746,13 +760,6 @@
         <td>HIGH</td>
         <td>v1.25.4</td>
         <td>1.24.12, 1.25.6</td>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2025-68121</td>
-        <td>HIGH</td>
-        <td>v1.25.4</td>
-        <td>1.24.13, 1.25.7, 1.26.0-rc.3</td>
     </tr>
 </table>
 <h4>No Misconfigurations found</h4>
@@ -768,6 +775,13 @@
     </tr>
     <tr>
         <td><code>stdlib</code></td>
+        <td>CVE-2025-68121</td>
+        <td>CRITICAL</td>
+        <td>v1.25.4</td>
+        <td>1.24.13, 1.25.7, 1.26.0-rc.3</td>
+    </tr>
+    <tr>
+        <td><code>stdlib</code></td>
         <td>CVE-2025-61726</td>
         <td>HIGH</td>
         <td>v1.25.4</td>
@@ -793,13 +807,6 @@
         <td>HIGH</td>
         <td>v1.25.4</td>
         <td>1.24.12, 1.25.6</td>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2025-68121</td>
-        <td>HIGH</td>
-        <td>v1.25.4</td>
-        <td>1.24.13, 1.25.7, 1.26.0-rc.3</td>
     </tr>
 </table>
 <h4>No Misconfigurations found</h4>
@@ -815,6 +822,13 @@
     </tr>
     <tr>
         <td><code>stdlib</code></td>
+        <td>CVE-2025-68121</td>
+        <td>CRITICAL</td>
+        <td>v1.25.4</td>
+        <td>1.24.13, 1.25.7, 1.26.0-rc.3</td>
+    </tr>
+    <tr>
+        <td><code>stdlib</code></td>
         <td>CVE-2025-61726</td>
         <td>HIGH</td>
         <td>v1.25.4</td>
@@ -840,13 +854,6 @@
         <td>HIGH</td>
         <td>v1.25.4</td>
         <td>1.24.12, 1.25.6</td>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2025-68121</td>
-        <td>HIGH</td>
-        <td>v1.25.4</td>
-        <td>1.24.13, 1.25.7, 1.26.0-rc.3</td>
     </tr>
 </table>
 <h4>No Misconfigurations found</h4>
@@ -862,6 +869,13 @@
     </tr>
     <tr>
         <td><code>stdlib</code></td>
+        <td>CVE-2025-68121</td>
+        <td>CRITICAL</td>
+        <td>v1.25.4</td>
+        <td>1.24.13, 1.25.7, 1.26.0-rc.3</td>
+    </tr>
+    <tr>
+        <td><code>stdlib</code></td>
         <td>CVE-2025-61726</td>
         <td>HIGH</td>
         <td>v1.25.4</td>
@@ -887,13 +901,6 @@
         <td>HIGH</td>
         <td>v1.25.4</td>
         <td>1.24.12, 1.25.6</td>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2025-68121</td>
-        <td>HIGH</td>
-        <td>v1.25.4</td>
-        <td>1.24.13, 1.25.7, 1.26.0-rc.3</td>
     </tr>
 </table>
 <h4>No Misconfigurations found</h4>
@@ -909,6 +916,13 @@
     </tr>
     <tr>
         <td><code>stdlib</code></td>
+        <td>CVE-2025-68121</td>
+        <td>CRITICAL</td>
+        <td>v1.24.6</td>
+        <td>1.24.13, 1.25.7, 1.26.0-rc.3</td>
+    </tr>
+    <tr>
+        <td><code>stdlib</code></td>
         <td>CVE-2025-58183</td>
         <td>HIGH</td>
         <td>v1.24.6</td>
@@ -941,13 +955,6 @@
         <td>HIGH</td>
         <td>v1.24.6</td>
         <td>1.24.12, 1.25.6</td>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2025-68121</td>
-        <td>HIGH</td>
-        <td>v1.24.6</td>
-        <td>1.24.13, 1.25.7, 1.26.0-rc.3</td>
     </tr>
 </table>
 <h4>No Misconfigurations found</h4>
@@ -963,6 +970,13 @@
     </tr>
     <tr>
         <td><code>stdlib</code></td>
+        <td>CVE-2025-68121</td>
+        <td>CRITICAL</td>
+        <td>v1.25.0</td>
+        <td>1.24.13, 1.25.7, 1.26.0-rc.3</td>
+    </tr>
+    <tr>
+        <td><code>stdlib</code></td>
         <td>CVE-2025-58183</td>
         <td>HIGH</td>
         <td>v1.25.0</td>
@@ -995,13 +1009,6 @@
         <td>HIGH</td>
         <td>v1.25.0</td>
         <td>1.24.12, 1.25.6</td>
-    </tr>
-    <tr>
-        <td><code>stdlib</code></td>
-        <td>CVE-2025-68121</td>
-        <td>HIGH</td>
-        <td>v1.25.0</td>
-        <td>1.24.13, 1.25.7, 1.26.0-rc.3</td>
     </tr>
 </table>
 <h4>No Misconfigurations found</h4>
