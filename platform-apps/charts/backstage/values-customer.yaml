@@ -15,7 +15,7 @@ backstage:
             baseUrl: 'https://ai.exxeta.info/v1' 
             model: 'gpt-4o-mini'
             # This secret variable is injected by extraEnvVarsSecrets above
-            apiKey: '${EXXETA_AI_TOKEN}'
+            token: 'sk-degLxskGdt5D-ggZzPVySw'
         
         mcpServers:
           - id: demo-everything
