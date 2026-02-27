@@ -52,6 +52,13 @@ backstage:
         name: kubriX OSS
 
       backend:
+        actions:
+          pluginSources:
+            - catalog
+          filter:
+            include:
+              - id: 'catalog:*'
+
         # Used for enabling authentication, secret is shared by all backend plugins
         # See https://backstage.io/docs/tutorials/backend-to-backend-auth for
         # information on the format

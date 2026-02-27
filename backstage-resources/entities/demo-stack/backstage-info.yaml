@@ -4,10 +4,10 @@ metadata:
   name: kubrix-backstage
   title: kubriX platform Showcase
   description: |
-    This is the kubriX paltform Showcase for our official demo instance
+    This is the kubriX paltform Showcase for Exxeta demo instance
   links:
     - title: Website
-      url: https://kubriX.io
+      url: https://exxeta.com
     - title: kubriX platform Showcase
       url: https://backstage.kubrix.cape.rocks
   annotations:
