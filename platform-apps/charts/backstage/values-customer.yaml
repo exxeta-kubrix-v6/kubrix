@@ -21,7 +21,7 @@ backstage:
           - id: 'backstage-server'
             name: 'Backstage Catalog'
             url: 'http://localhost:7007/api/mcp-actions/v1'
-            type: 'sse'
+            type: 'streamable-http'
             headers:
               Authorization: 'Bearer ${EXTERNAL_ACCESS_TOKEN}'
         
