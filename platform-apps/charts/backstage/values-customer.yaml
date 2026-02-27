@@ -20,7 +20,7 @@ backstage:
         mcpServers:
           - id: 'backstage-server'
             name: 'Backstage Catalog'
-            url: 'http://127.0.0.1:7007/api/mcp-actions/v1'
+            url: 'http://127.0.0.1:7007/api/mcp-actions/v1/sse'
             headers:
               Authorization: 'Bearer ${EXTERNAL_ACCESS_TOKEN}'
         
