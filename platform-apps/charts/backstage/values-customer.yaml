@@ -15,16 +15,28 @@ backstage:
             baseUrl: 'https://ai.exxeta.info/v1' 
             model: 'gpt-4o-mini'
             # This secret variable is injected by extraEnvVarsSecrets above
-            token: 'sk-degLxskGdt5D-ggZzPVySw'
+            token: '${EXXETA_AI_TOKEN}'
         
         mcpServers:
-          - id: demo-everything
-            name: demo-everything
-            url: 'http://mcp-demo-service:80/sse'
-            type: sse
-
           - id: 'backstage-server'
             name: 'Backstage Catalog'
-            url: 'http://localhost:7007/api/mcp-actions/v1'
+            url: 'http://localhost:7007/api/mcp-actions/v1/sse'
+            type: sse
             headers:
               Authorization: 'Bearer ${EXTERNAL_ACCESS_TOKEN}'
+        
+        # Optional: Customize the system prompt for the AI assistant
+        # If not specified, uses a default prompt optimized for tool usage
+        systemPrompt: "You are a helpful assistant. When using tools, provide a clear, readable summary of the results rather than showing raw data. Focus on answering the user's question with the information gathered."
+
+        # Configure quick prompts
+        quickPrompts:
+          - title: 'Kubernetes Health Check'
+            description: 'Check the health of Kubernetes clusters'
+            prompt: 'Show me the current Kubernetes deployments, pods status, and resource utilization in a nicely formatted text with bullet points'
+            category: Infrastructure
+
+          - title: 'Backstage Catalog Query'
+            description: 'Query the Backstage software catalog'
+            prompt: 'Describe the "example-app" microservice in our Backstage catalog'
+            category: Catalog

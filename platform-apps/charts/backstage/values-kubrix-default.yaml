@@ -52,6 +52,13 @@ backstage:
         name: kubriX OSS
 
       backend:
+        actions:
+          pluginSources:
+            - catalog
+          filter:
+            include:
+              - id: 'catalog:*'
+
         # Used for enabling authentication, secret is shared by all backend plugins
         # See https://backstage.io/docs/tutorials/backend-to-backend-auth for
         # information on the format
@@ -60,11 +67,13 @@ backstage:
           - type: static
             options:
               token: ${EXTERNAL_ACCESS_TOKEN}
-              subject: admincurlaccess          
+              subject: admincurlaccess         
           - type: legacy
             options:
               secret: ${BACKEND_SECRET}
               subject: legacy-secret
+          experimentalDynamicClientRegistration:
+            enabled: true
         baseUrl: ~
         listen:
           port: 7007
@@ -256,6 +265,15 @@ backstage:
                 timeout: { minutes: 3 } # Customize this to fit your needs
                 initialDelay: { seconds: 30 } # Customize this to fit your needs
 
+          microsoftGraphOrg:
+            default:
+              clientId: ${OIDC_CLIENTID}       
+              clientSecret: ${OIDC_CLIENTSECRET} 
+              tenantId: ${AZURE_TENANT_ID}     
+              schedule:
+                frequency: { minutes: 30 }
+                timeout: { minutes: 3 }
+
       kubernetes:
         serviceLocatorMethod:
           type: multiTenant
@@ -378,11 +396,11 @@ backstage:
             enabled: true
 
       # dummy entry
-      mcpChat:
-        providers:
-          - id: ollama
-            baseUrl: 'http://localhost:11434'
-            model: llama3.1:8b
+      # mcpChat:
+      #   providers:
+      #     - id: ollama
+      #       baseUrl: 'http://localhost:11434'
+      #       model: llama3.1:8b
 
 ## pgdb
 cluster:
