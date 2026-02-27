@@ -255,6 +255,15 @@ backstage:
                 # supports ISO duration, "human duration" as used in code
                 timeout: { minutes: 3 } # Customize this to fit your needs
                 initialDelay: { seconds: 30 } # Customize this to fit your needs
+                
+          microsoftGraphOrg:
+            default:
+              clientId: ${OIDC_CLIENTID}       
+              clientSecret: ${OIDC_CLIENTSECRET} 
+              tenantId: ${AZURE_TENANT_ID}     
+              schedule:
+                frequency: { minutes: 30 }
+                timeout: { minutes: 3 }
 
       kubernetes:
         serviceLocatorMethod:
@@ -378,11 +387,11 @@ backstage:
             enabled: true
 
       # dummy entry
-      mcpChat:
-        providers:
-          - id: ollama
-            baseUrl: 'http://localhost:11434'
-            model: llama3.1:8b
+      # mcpChat:
+      #   providers:
+      #     - id: ollama
+      #       baseUrl: 'http://localhost:11434'
+      #       model: llama3.1:8b
 
 ## pgdb
 cluster:
