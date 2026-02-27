@@ -60,11 +60,13 @@ backstage:
           - type: static
             options:
               token: ${EXTERNAL_ACCESS_TOKEN}
-              subject: admincurlaccess          
+              subject: admincurlaccess         
           - type: legacy
             options:
               secret: ${BACKEND_SECRET}
               subject: legacy-secret
+          experimentalDynamicClientRegistration:
+            enabled: true
         baseUrl: ~
         listen:
           port: 7007
@@ -255,7 +257,7 @@ backstage:
                 # supports ISO duration, "human duration" as used in code
                 timeout: { minutes: 3 } # Customize this to fit your needs
                 initialDelay: { seconds: 30 } # Customize this to fit your needs
-                
+
           microsoftGraphOrg:
             default:
               clientId: ${OIDC_CLIENTID}       
