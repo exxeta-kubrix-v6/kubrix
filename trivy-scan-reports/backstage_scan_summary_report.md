@@ -389,21 +389,21 @@
         <td>CVE-2026-25896</td>
         <td>CRITICAL</td>
         <td>4.5.3</td>
-        <td>5.3.5</td>
+        <td>5.3.5, 4.5.4</td>
     </tr>
     <tr>
         <td><code>fast-xml-parser</code></td>
         <td>CVE-2026-26278</td>
         <td>HIGH</td>
         <td>4.5.3</td>
-        <td>5.3.6</td>
+        <td>4.5.4, 5.3.6</td>
     </tr>
     <tr>
         <td><code>fast-xml-parser</code></td>
         <td>CVE-2026-25896</td>
         <td>CRITICAL</td>
         <td>5.2.5</td>
-        <td>5.3.5</td>
+        <td>5.3.5, 4.5.4</td>
     </tr>
     <tr>
         <td><code>fast-xml-parser</code></td>
@@ -417,14 +417,14 @@
         <td>CVE-2026-26278</td>
         <td>HIGH</td>
         <td>5.2.5</td>
-        <td>5.3.6</td>
+        <td>4.5.4, 5.3.6</td>
     </tr>
     <tr>
         <td><code>fast-xml-parser</code></td>
         <td>CVE-2026-25896</td>
         <td>CRITICAL</td>
         <td>5.3.0</td>
-        <td>5.3.5</td>
+        <td>5.3.5, 4.5.4</td>
     </tr>
     <tr>
         <td><code>fast-xml-parser</code></td>
@@ -438,7 +438,7 @@
         <td>CVE-2026-26278</td>
         <td>HIGH</td>
         <td>5.3.0</td>
-        <td>5.3.6</td>
+        <td>4.5.4, 5.3.6</td>
     </tr>
     <tr>
         <td><code>form-data</code></td>
