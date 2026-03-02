@@ -13,14 +13,14 @@ backstage:
           - id: openai
             # Point to Exxeta LiteLLM instance
             baseUrl: 'https://ai.exxeta.info/v1' 
-            model: 'gpt-4o-mini'
+            model: gpt-4o-mini
             # This secret variable is injected by extraEnvVarsSecrets above
-            token: '${EXXETA_AI_TOKEN}'
+            token: ${EXXETA_AI_TOKEN}
         
         mcpServers:
-          - id: 'backstage-server'
+          - id: backstage-server
             name: 'Backstage Catalog'
-            url: 'http://127.0.0.1:7007/api/mcp-actions/v1/sse'
+            url: 'http://localhost:7007/api/mcp-actions/v1'
             headers:
               Authorization: 'Bearer ${EXTERNAL_ACCESS_TOKEN}'
         

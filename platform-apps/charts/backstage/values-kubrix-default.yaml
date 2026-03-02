@@ -54,7 +54,7 @@ backstage:
       backend:
         actions:
           pluginSources:
-            - catalog
+            - 'catalog'
           filter:
             include:
               - id: 'catalog:*'
@@ -68,27 +68,24 @@ backstage:
             options:
               token: ${EXTERNAL_ACCESS_TOKEN}
               subject: admincurlaccess
-            accessRestrictions:
-              - plugin: mcp-actions
-              - plugin: catalog        
           - type: legacy
             options:
               secret: ${BACKEND_SECRET}
               subject: legacy-secret
           experimentalDynamicClientRegistration:
             enabled: true
-        baseUrl: ~
+        baseUrl: http://localhost:7007
         listen:
           port: 7007
           # Uncomment the following host directive to bind to specific interfaces
-          # host: 127.0.0.1
+          host: 127.0.0.1
         csp:
           connect-src: ["'self'", 'http:', 'https:']
           frame-src: []
           # Content-Security-Policy directives follow the Helmet format: https://helmetjs.github.io/#reference
           # Default Helmet Content-Security-Policy values can be removed by setting the key to false
         cors:
-          origin: ~
+          origin: http://localhost:3000
           methods: [GET, HEAD, PATCH, POST, PUT, DELETE]
           credentials: true
         # This is for local development only, it is not recommended to use this in production
@@ -391,19 +388,10 @@ backstage:
               - name: user:default/dummyuser
             superUsers:
               - name: user:default/demoadmin
-              - name: user:default/phac008
-              - name: user:default/jkleinlercher
           policies-csv-file: /opt/app-root/src/rbac/rbac-policy.csv
           policyFileReload: true
           database:
             enabled: true
-
-      # dummy entry
-      # mcpChat:
-      #   providers:
-      #     - id: ollama
-      #       baseUrl: 'http://localhost:11434'
-      #       model: llama3.1:8b
 
 ## pgdb
 cluster:
