@@ -1,6 +1,7 @@
 backstage:
   backstage:
-    image: v1.47.3
+    image:
+      tag: v1.47.3
 
     extraEnvVarsSecrets:
       - sx-cnp-secret
