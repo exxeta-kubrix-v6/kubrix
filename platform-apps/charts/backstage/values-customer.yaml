@@ -11,6 +11,11 @@ backstage:
       - exxeta-ai-secret
 
     appConfig:
+      backend:
+        listen:
+          port: 7007
+          host: 0.0.0.0
+
       mcpChat:
         providers:
           - id: openai
