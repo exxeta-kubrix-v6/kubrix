@@ -67,7 +67,10 @@ backstage:
           - type: static
             options:
               token: ${EXTERNAL_ACCESS_TOKEN}
-              subject: admincurlaccess         
+              subject: admincurlaccess
+            accessRestrictions:
+              - plugin: mcp-actions
+              - plugin: catalog        
           - type: legacy
             options:
               secret: ${BACKEND_SECRET}
