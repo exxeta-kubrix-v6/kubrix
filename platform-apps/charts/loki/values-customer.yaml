@@ -7,3 +7,5 @@ loki:
       limits:
         memory: 2Gi
         cpu: 2000m
+    persistence:
+      size: 50Gi
