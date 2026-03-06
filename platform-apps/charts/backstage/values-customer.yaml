@@ -32,9 +32,9 @@ backstage:
               githubUrl: https://github.com
               orgs: ['abs-idp']
               schedule:
-                initialDelay: { seconds: 30 }
-                frequency: { hours: 1 }
-                timeout: { minutes: 50 }
+                initialDelay: { seconds: 10 }
+                frequency: { minutes: 1 }
+                timeout: { minutes: 1 }
 
       mcpChat:
         providers:
