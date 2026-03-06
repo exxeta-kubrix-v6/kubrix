@@ -27,6 +27,15 @@ backstage:
                 timeout: { minutes: 1 } # Customize this to fit your needs
                 initialDelay: { seconds: 15 } # Customize this to fit your needs
 
+          githubOrg:
+            - id: github
+              githubUrl: https://github.com
+              orgs: ['abs-idp']
+              schedule:
+                initialDelay: { seconds: 30 }
+                frequency: { hours: 1 }
+                timeout: { minutes: 50 }
+
       mcpChat:
         providers:
           - id: openai
