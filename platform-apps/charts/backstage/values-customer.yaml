@@ -27,6 +27,20 @@ backstage:
                 timeout: { minutes: 1 } # Customize this to fit your needs
                 initialDelay: { seconds: 15 } # Customize this to fit your needs
 
+          github:
+            # the provider ID can be any camelCase string
+            absIdpGithubProvider:
+              organization: 'abs-idp' # string
+              catalogPath: '/catalog-info.yaml' # string
+              filters:
+                branch: 'main' # string
+                repository: '.*' # Regex
+              schedule: # same options as in SchedulerServiceTaskScheduleDefinition
+                # supports cron, ISO duration, "human duration" as used in code
+                frequency: { minutes: 1 }
+                # supports ISO duration, "human duration" as used in code
+                timeout: { minutes: 3 }
+
           githubOrg:
             - id: github
               githubUrl: https://github.com
