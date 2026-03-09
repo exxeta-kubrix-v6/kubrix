@@ -15,3 +15,20 @@ teams:
     multiStageKargoAppSet:
       github:
         organization: exxeta-kubrix-v6
+
+# new team stanza for team kubrix
+  - name: kubrix
+    sourceRepos:
+      - 'https://github.com/exxeta-kubrix-v6/kubrix-*'
+    clusterResourceWhitelist:
+      - group: ""
+        kind: Namespace
+      - group: kargo.akuity.io
+        kind: Project
+    appOfAppsRepo:
+      repoURL: https://github.com/exxeta-kubrix-v6/kubrix-apps
+      path: .
+      revision: main
+    multiStageKargoAppSet:
+      github:
+        organization: exxeta-kubrix-v6
