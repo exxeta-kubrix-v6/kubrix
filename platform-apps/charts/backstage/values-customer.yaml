@@ -37,7 +37,7 @@ backstage:
                 repository: '.*' # Regex
               schedule: # same options as in SchedulerServiceTaskScheduleDefinition
                 # supports cron, ISO duration, "human duration" as used in code
-                frequency: { minutes: 1 }
+                frequency: { minutes: 60 }
                 # supports ISO duration, "human duration" as used in code
                 timeout: { minutes: 3 }
 
@@ -49,7 +49,7 @@ backstage:
                 repository: '.*' # Regex
               schedule: # same options as in SchedulerServiceTaskScheduleDefinition
                 # supports cron, ISO duration, "human duration" as used in code
-                frequency: { minutes: 1 }
+                frequency: { minutes: 60 }
                 # supports ISO duration, "human duration" as used in code
                 timeout: { minutes: 3 }
 
@@ -58,8 +58,8 @@ backstage:
               githubUrl: https://github.com
               orgs: ['abs-idp']
               schedule:
-                initialDelay: { seconds: 10 }
-                frequency: { minutes: 1 }
+                initialDelay: { seconds: 30 }
+                frequency: { minutes: 60 }
                 timeout: { minutes: 1 }
 
       mcpChat:
